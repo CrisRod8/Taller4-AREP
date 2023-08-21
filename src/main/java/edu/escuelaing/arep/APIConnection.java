@@ -16,6 +16,11 @@ public class APIConnection {
 
     public static String movieRequest(String title, String url) throws IOException {
 
+        Cache cache = Cache.getInstance();
+        if(cache.isOnCache(title)){
+            return cache.getMovieDescription(title);
+        }
+
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setRequestMethod("GET");
@@ -35,6 +40,7 @@ public class APIConnection {
             in.close();
 
             String info = "["+ response +"]" ;
+            cache.addMovie(title, info);
             return  info;
         } else {
             System.out.println("GET request not worked");

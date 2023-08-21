@@ -117,6 +117,8 @@ public class HttpServer {
             for (String key: object.keySet()) {
                 dict.put(key.toString(), object.get(key).toString());
             }
+            System.out.println(response);
+
         }
 
         String table = "<tr> \n";
