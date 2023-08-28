@@ -5,11 +5,14 @@ import java.io.*;
 import java.util.HashMap;
 
 import org.json.*;
+import edu.escuelaing.arep.services.Service;
+
 
 /**
  * Servidor web que usa el puerto 35000
  */
 public class HttpServer {
+
     public static void main(String[] args) throws IOException {
         ServerSocket serverSocket = null;
         try {
@@ -35,16 +38,28 @@ public class HttpServer {
                             clientSocket.getInputStream()));
             String inputLine, outputLine, title ="";
 
+            boolean first_line = true;
+            String request = "/simple";
+
             while ((inputLine = in.readLine()) != null) {
                 if(inputLine.contains("info?title=")){
                     String[] array = inputLine.split("title=");
                     title = (array[1].split("HTTP")[0]).replace(" ", "");
                 }
+                if (first_line) {
+                    request = inputLine.split(" ")[1];
+                    first_line = false;
+                }
+
                 if (!in.ready()) {
                     break;
                 }
             }
-            if(!title.equals("")){
+
+            if (request.startsWith("/apps/")) {
+                outputLine = startService(request.substring(5));
+            }
+            else if(!title.equals("")){
                 String response = APIConnection.movieRequest(title, "http://www.omdbapi.com/?t="+ title +"&apikey=1ad2f274");
                 outputLine ="HTTP/1.1 200 OK\r\n"
                         + "Content-Type: text/html\r\n"
@@ -65,6 +80,21 @@ public class HttpServer {
             clientSocket.close();
         }
         serverSocket.close();
+    }
+
+    private static String startService(String serviceName) {
+        Service ser = Service.getInstance();
+        try {
+            String type = serviceName.split("\\.")[1];
+            String header = ser.getHeader(type, "200 OK");
+            String body = ser.getResponse("src/main/resources/" + serviceName);
+            return header + body;
+        }
+        catch (RuntimeException e){
+            String header = ser.getHeader("html", "404 Not Found");
+            String body = ser.getResponse("src/main/resources/error.html");
+            return header + body;
+        }
     }
 
     /**
