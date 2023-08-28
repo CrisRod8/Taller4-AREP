@@ -4,6 +4,7 @@
     <title>Buscador de películas</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="prueba.js"></script>
     <link rel="stylesheet" href="index.css">
 
 </head>
@@ -15,15 +16,35 @@
         <label for="name">Titulo de la película a buscar:</label><br><br>
         <input type="text" id="name" name="name" value="Batman"><br><br>
         <input type="button" value="Submit" onclick="loadGetMsg()"><br><br>
-        <img src="b2.jpg" alt="Foto">
+
+        <img src="b2.jpg" />
 
     </form>
     <div id="getrespmsg"></div>
 
     </div>
 </div>
+<script>
+            function loadGetMsg() {
+                let nameVar = document.getElementById("name").value;
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                    document.getElementById("getrespmsg").innerHTML =
+                    this.responseText;
+                }
+                xhttp.open("GET", "/info?title="+nameVar);
+                xhttp.send();
+            }
+        </script>
+<h1>
+    Esta es la pagina index
+</h1>
 
-
+<button onclick="color()">
+    Boton que cambia el color del titulo
+</button>
+<img src="b2.jpg" alt="Foto">
+<script src="color.js"></script>
 
 </body>
 </html>
