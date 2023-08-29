@@ -6,7 +6,7 @@ Escriba un servidor web que soporte múlltiples solicitudes seguidas (no concurr
 
 Autor: Cristian Fernando Rodríguez González  
 
-## EJECUCION 
+## EJECUCIÓN 
 1. Clonar el repositorio usando el código a continuación:
    ```
    git clone https://github.com/CrisRod8/Taller2-AREP.git
@@ -50,7 +50,7 @@ Autor: Cristian Fernando Rodríguez González
    ![image](https://github.com/CrisRod8/Taller2-AREP/assets/111186898/2bf2a7bf-a751-4df3-884e-e2831a5995fb)   
 
 
-# Descripción  
+# DESCRIPCIÓN  
 Seguimos trabajando la arquitectura enfocada en API Rest, usando patrones como el patrón de diseño SINGLETON para la implementación de servicios.
 
 Patrones usados: Se usaron tanto el patrón de Fachada como el patrón Singleton.  
