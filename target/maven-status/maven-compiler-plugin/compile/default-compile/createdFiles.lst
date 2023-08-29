@@ -2,4 +2,3 @@ edu\escuelaing\arep\HttpServer.class
 edu\escuelaing\arep\APIConnection.class
 edu\escuelaing\arep\Cache.class
 edu\escuelaing\arep\services\Service.class
-edu\escuelaing\arep\services\ServiceREST.class

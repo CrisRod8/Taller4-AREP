@@ -147,7 +147,7 @@ public class HttpServer {
             for (String key: object.keySet()) {
                 dict.put(key.toString(), object.get(key).toString());
             }
-            System.out.println(response);
+            //System.out.println(response);
 
         }
 

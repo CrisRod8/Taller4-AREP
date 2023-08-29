@@ -1,9 +1,9 @@
 var color = function (){
-    background = document.querySelector("h1")
-    if (background.style.color == "blue"){
-        background.style.color = "red";
+    titulo = document.querySelector("h1")
+    if (titulo.style.color == "blue"){
+        titulo.style.color = "white";
     }else{
-        background.style.color = "blue";
+        titulo.style.color = "blue";
     }
 
 }
