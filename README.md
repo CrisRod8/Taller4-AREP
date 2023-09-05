@@ -1,4 +1,4 @@
-# Taller2-AREP
+# Taller3-AREP
 
 # MICROFRAMEWORKS WEB
 
@@ -61,7 +61,7 @@ Autor: Cristian Fernando Rodríguez González
   ![image](https://github.com/CrisRod8/Taller3-AREP/assets/111186898/6d718f44-4688-4d21-80ac-01f849f1f629)  
   
 # DESCRIPCIÓN  
-Con la implementación de Microframeworks Web, en este caso Spark, diseñamos un software ligero y minimalista que facilita el desarrollo del servicio web, sin la necesidad de agregar funcionalidades o componentes complejos; para seguir con la linea de la arquitectura enfocada en API Rest, usando patrones como el patrón de diseño SINGLETON para la implementación de servicios.
+Con la implementación de Microframeworks Web, en este caso sparkweb, diseñamos un software ligero y minimalista que facilita el desarrollo del servicio web, sin la necesidad de agregar funcionalidades o componentes complejos; para seguir con la linea de la arquitectura enfocada en API Rest, usando patrones como el patrón de diseño SINGLETON para la implementación de servicios.
 
 Patrones usados: Se usaron tanto el patrón de Fachada como el patrón Singleton.  
 
