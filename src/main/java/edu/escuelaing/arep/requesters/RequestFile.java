@@ -1,18 +1,35 @@
-package edu.escuelaing.arep.sparkService;
+package edu.escuelaing.arep.requesters;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class Response {
+/**
+ * Clase enfocada en cargar los archivos especificados en el path
+ */
+public class RequestFile {
 
+    private static RequestFile instance;
     private String path;
     private String code;
     private String type;
-
     private String body;
 
+    /**
+     * Obtener la única instancia de la clase
+     * @return La instancia de la clase
+     */
+    public static RequestFile getInstance() {
+        if(instance == null){
+            instance = new RequestFile();
+        }
+        return instance;
+    }
 
+    /**
+     * Obtener el header y el body
+     * @return El header y body
+     */
     public String getResponse(){
         return getHeader() + getBody();
     }
@@ -36,10 +53,10 @@ public class Response {
         }
         body = new String(fileContent);
     }
-
     public void setBody(String body) {
         this.body = body;
     }
+
 
     public String getType() {
         return type;
@@ -64,4 +81,5 @@ public class Response {
     public void setPath(String path) {
         this.path = path;
     }
+
 }
