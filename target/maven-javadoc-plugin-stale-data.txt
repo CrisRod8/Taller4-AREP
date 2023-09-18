@@ -1,0 +1,49 @@
+@options
+@packages
+-classpath
+'C:/Users/cristian.rodriguez-g/.m2/repository/org/json/json/20220924/json-20220924.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+-sourcepath
+'C:/Temp/Taller4-AREP/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Temp/Taller4-AREP/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Taller1 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'Taller1 1.0-SNAPSHOT API'
+edu.escuelaing.arep.anotaciones
+edu.escuelaing.arep
+edu.escuelaing.arep.controllers
+edu.escuelaing.arep.requesters
+C:\Users\cristian.rodriguez-g\.m2\repository\org\json\json\20220924\json-20220924.jar = 1695050852609
+C:\Temp\Taller4-AREP\src\main\java = 1695051190035
+C:\Temp\Taller4-AREP\target\site\apidocs\allclasses-index.html = 1695053077491
+C:\Temp\Taller4-AREP\target\site\apidocs\allpackages-index.html = 1695053077494
+C:\Temp\Taller4-AREP\target\site\apidocs\element-list = 1695053077322
+C:\Temp\Taller4-AREP\target\site\apidocs\help-doc.html = 1695053077539
+C:\Temp\Taller4-AREP\target\site\apidocs\index-all.html = 1695053077522
+C:\Temp\Taller4-AREP\target\site\apidocs\index.html = 1695053077471
+C:\Temp\Taller4-AREP\target\site\apidocs\jquery-ui.overrides.css = 1695053077571
+C:\Temp\Taller4-AREP\target\site\apidocs\member-search-index.js = 1695053077499
+C:\Temp\Taller4-AREP\target\site\apidocs\module-search-index.js = 1695053077495
+C:\Temp\Taller4-AREP\target\site\apidocs\overview-summary.html = 1695053077522
+C:\Temp\Taller4-AREP\target\site\apidocs\overview-tree.html = 1695053077456
+C:\Temp\Taller4-AREP\target\site\apidocs\package-search-index.js = 1695053077497
+C:\Temp\Taller4-AREP\target\site\apidocs\script.js = 1695053077557
+C:\Temp\Taller4-AREP\target\site\apidocs\search.js = 1695053077566
+C:\Temp\Taller4-AREP\target\site\apidocs\stylesheet.css = 1695053077555
+C:\Temp\Taller4-AREP\target\site\apidocs\tag-search-index.js = 1695053077500
+C:\Temp\Taller4-AREP\target\site\apidocs\type-search-index.js = 1695053077498
