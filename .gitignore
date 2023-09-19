@@ -1,0 +1,49 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Ignora archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignora carpetas específicas
+/node_modules/
+/dist/
+
+# Ignora archivos de construcción o compilados
+*.log
+*.zip
+*.tar.gz
+
+# Ignora archivos de configuración locales
+.env
+.env.local
+.env.*.local
+
+# Ignora archivos de dependencias de desarrollo
+/package-lock.json
+/yarn.lock
+
+# Ignora archivos de IDE o editor
+.vscode/
+.idea/
